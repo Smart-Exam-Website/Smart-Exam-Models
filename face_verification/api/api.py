@@ -68,7 +68,7 @@ def verify():
 
 	toc =  time.time()
 
-	resp_obj["trx_id"] = trx_id
+	#resp_obj["trx_id"] = trx_id
 	resp_obj["seconds"] = toc-tic
 
 
