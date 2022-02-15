@@ -90,7 +90,8 @@ def verifyWrapper(req, trx_id = 0):
 	backends = ['opencv', 'ssd', 'dlib', 'mtcnn', 'retinaface']
 	model_name = "Facenet"
 	distance_metric = "cosine"
-	detector_backend = "retinaface"
+	# detector_backend = "retinaface"
+	detector_backend = "opencv"
 	if "model_name" in list(req.keys()):
 		model_name = req["model_name"]
 	if "distance_metric" in list(req.keys()):
