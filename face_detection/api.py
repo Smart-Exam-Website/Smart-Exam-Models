@@ -12,6 +12,8 @@ from face_detector import FaceDetector
 
 import filecmp
 
+import argparse
+
 app = Flask(__name__)
 api = Api(app)  
 
