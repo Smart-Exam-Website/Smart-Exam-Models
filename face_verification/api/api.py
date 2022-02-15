@@ -69,7 +69,7 @@ def verify():
 	toc =  time.time()
 
 	#resp_obj["trx_id"] = trx_id
-	resp_obj["seconds"] = toc-tic
+	#resp_obj["seconds"] = toc-tic
 
 
 	return str(resp_obj['pair_1']['verified']), 200
