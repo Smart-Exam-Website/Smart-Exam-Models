@@ -79,10 +79,9 @@ def verify():
 	# else:
 	# 	return {"verified":0},200
 	
-	return resp_obj['pair_1']['verified'], 200		
+	return str(resp_obj['pair_1']['verified']), 200		
 		
 
-	
 
 def verifyWrapper(req, trx_id = 0):
  
