@@ -73,13 +73,13 @@ def verify():
 	# print(type(resp_obj['pair_1']['verified']))
 	
 	verified = resp_obj['pair_1']['verified'] 
-	if verified is True:
-		return {"verified":1},200	
+	# if verified is True:
+	# 	return {"verified":1},200	
     
-	else:
-		return {"verified":0},200
+	# else:
+	# 	return {"verified":0},200
 
-		
+	return resp_obj, 200		
 		
 
 	
