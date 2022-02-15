@@ -71,8 +71,9 @@ def verify():
 	#resp_obj["trx_id"] = trx_id
 	#resp_obj["seconds"] = toc-tic
 
-
-	return str(resp_obj['pair_1']['verified']), 200
+    
+	#return str(resp_obj['pair_1']['verified']), 200
+	return resp_obj, 200
 
 def verifyWrapper(req, trx_id = 0):
 
