@@ -96,7 +96,7 @@ class Face_Detector_API(Resource):
 api.add_resource(Face_Detector_API, "/detect")
 
 if __name__ == "__main__":
-    app.run(debug = True) 
+    app.run(debug = False) 
 
     # with open("correct_result.txt") as f:
     #     text = f.read()
