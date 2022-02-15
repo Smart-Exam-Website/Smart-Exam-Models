@@ -70,14 +70,19 @@ def verify():
 
 	#resp_obj["trx_id"] = trx_id
 	#resp_obj["seconds"] = toc-tic
-
+	if resp_obj['pair_1']['verified']:
+		return {"verified":1},200	
     
-	#return str(resp_obj['pair_1']['verified']), 200
-	#return resp_obj, 200
-	return {"verified":10},200
+	else:
+		return {"verified":0},200
+
+		
+		
+
+	
 
 def verifyWrapper(req, trx_id = 0):
-
+ 
 	resp_obj = jsonify({'success': False})
 	backends = ['opencv', 'ssd', 'dlib', 'mtcnn', 'retinaface']
 	model_name = "Facenet"
