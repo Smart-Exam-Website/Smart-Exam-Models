@@ -72,7 +72,7 @@ def verify():
 	#resp_obj["seconds"] = toc-tic
 	# print(type(resp_obj['pair_1']['verified']))
 	
-	verified = resp_obj['pair_1']['verified'] 
+	# verified = resp_obj['pair_1']['verified'] 
 	# if verified is True:
 	# 	return {"verified":1},200	
     
