@@ -144,6 +144,7 @@ def verifyWrapper(req, trx_id = 0):
 
 	except Exception as err:
 		resp_obj = jsonify({'success': False, 'error': str(err)}), 205
+		resp_obj = str(err)
 
 	return resp_obj
 
