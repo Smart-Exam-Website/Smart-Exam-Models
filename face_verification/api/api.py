@@ -70,6 +70,7 @@ def verify():
 
 	#resp_obj["trx_id"] = trx_id
 	#resp_obj["seconds"] = toc-tic
+	print(type(resp_obj['pair_1']['verified']))
 	if resp_obj['pair_1']['verified']:
 		return {"verified":1},200	
     
