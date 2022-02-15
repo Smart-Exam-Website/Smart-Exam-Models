@@ -79,7 +79,7 @@ def verify():
 	# else:
 	# 	return {"verified":0},200
 	
-	return {"bb": str(resp_obj)}, 200		
+	return resp_obj, 200		
 		
 
 	
