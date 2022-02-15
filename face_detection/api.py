@@ -96,7 +96,15 @@ class Face_Detector_API(Resource):
 api.add_resource(Face_Detector_API, "/detect")
 
 if __name__ == "__main__":
-    app.run(debug = False) 
+    # app.run(debug = False) 
+	parser = argparse.ArgumentParser()
+	parser.add_argument(
+		'-p', '--port',
+		type=int,
+		default=5000,
+		help='Port of serving api')
+	args = parser.parse_args()
+	app.run(host='0.0.0.0', port=args.port)
 
     # with open("correct_result.txt") as f:
     #     text = f.read()
