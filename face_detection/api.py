@@ -19,7 +19,7 @@ api = Api(app)
 
 class Face_Detector():
     def __init__(self):
-        self.MODEL_PATH = 'model.pb'
+        self.MODEL_PATH = 'var/www/Smart-Exam-Models/face_detection/model.pb'
         self.face_detector = FaceDetector(self.MODEL_PATH, gpu_memory_fraction=0.25, visible_device_list='0')
     
     def decode_image(self, image_b64encode):
