@@ -87,7 +87,7 @@ def verifyWrapper(req, trx_id = 0):
  
 	resp_obj = jsonify({'success': False})
 	backends = ['opencv', 'ssd', 'dlib', 'mtcnn', 'retinaface']
-	model_name = "Facenet"
+	model_name = "Facenet512"
 	distance_metric = "cosine"
 	detector_backend = "retinaface"
 	# detector_backend = "opencv"
