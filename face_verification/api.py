@@ -87,7 +87,7 @@ def verifyWrapper(req, trx_id = 0):
  
 	resp_obj = jsonify({'success': False})
 	backends = ['opencv', 'ssd', 'dlib', 'mtcnn', 'retinaface']
-	model_name = "Facenet"
+	model_name = "Facenet512"
 	distance_metric = "cosine"
 	detector_backend = "retinaface"
 	# detector_backend = "opencv"
@@ -134,8 +134,10 @@ def verifyWrapper(req, trx_id = 0):
 	try:
 		resp_obj = DeepFace.verify(instances
 			, model_name = model_name
+			,enforce_detection = False
 			, distance_metric = distance_metric
 			, detector_backend = detector_backend
+			
 		)
 
 		if model_name == "Ensemble": #issue 198.
